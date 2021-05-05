@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Roteiros</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+  <link href="css/estilo-fluido-2.css" rel="stylesheet" type="text/css" >
+            <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive-2.css">
+
+		<!-- jquery-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        
+        <!-- plugin para o carrossel-->
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+		
+        <!-- script para este carrossel-->
+        <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+        <script type="text/javascript">
+		        $(document).ready(function() {
+
+					$('#facebook').mouseenter(function() {
+			$(this).attr('src', 'imagens/facebook-75-cor.png');
+		});
+        $('#facebook').mouseleave(function() {
+			$(this).attr('src', 'imagens/facebook-75.png');
+
+		});		
+        $('#twitter').mouseenter(function() {
+			$(this).attr('src', 'imagens/twitter-75-cor.png');
+
+		});
+        $('#twitter').mouseleave(function() {
+			$(this).attr('src', 'imagens/twitter-75.png');
+
+		});		
+        $('#google').mouseenter(function() {
+			$(this).attr('src', 'imagens/google-75-cor.png');
+
+		});
+        $('#google').mouseleave(function() {
+			$(this).attr('src', 'imagens/google-75.png');
+
+		});		
+        $('#instagram').mouseenter(function() {
+			$(this).attr('src', 'imagens/instagram-75-cor.png');
+
+		});
+        $('#instagram').mouseleave(function() {
+			$(this).attr('src', 'imagens/instagram-75.png');
+
+		});		
+		
+		$( "#formulario" ).submit(function() {
+		alert("Obrigado pela mensagem");
+		});
+				});
+		</script>
+
+</head>
+	
+	<body class="clearfix">
+	<header>
+		<section class="logotipo">
+			<a href="index.html" title="DTour"><img src="imagens/logotipo-60.png" width="200" height="60" alt="logotipo dtour"></a>
+		</section>
+	<nav>
+		<ul>
+			<li id="home"><a href="index.html" title="home" alt="home">HOME</a></li>
+			<li id="roteiros"><a href="roteiros.html" title="roteiros" alt="roteiros">ROTEIROS</a></li>
+			<li id="volunturismo"><a href="volunturismo.html" title="volunturismo" alt="volunturismo">VOLUNTURISMO</a></li>
+			<li id="sobre"><a href="sobre.html" title="sobre" alt="sobre">SOBRE</a></li>
+			<li id="contato"><a href="contato.html" title="contato" alt="contato">CONTATO</a></li>
+			<li id="telefone">[+55] 5123-7890</li>
+		</ul>
+		</nav>
+	</header>
+		
+		<section class="container"> <!-- !CUIDADO - Classe comum a todas as páginas, não mexer.-->
+          <section class="slider-roteiros">
+            <div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>                	<!--substituir imagens -->
+                        <li><img src="imagens/china-pequim-1920.jpg" alt="China"></li>
+                       	<li><img src="imagens/elefante-1920.jpg" alt="Elefantes Africa"></li>
+                        <li><img src="imagens/rio-de-janeiro-1920.jpg" alt="Rio de Janeiro" ></li>
+                        <li><img src="imagens/tartaruga-1920.jpg" alt="Tartaruga Panamá"></li>
+                        <li><img src="imagens/tribo-africa-1920.jpg" alt="Tribo Africana"></li>
+                    </ul>
+                </div>
+				<!--setas
+                <a href="#" class="jcarousel-control-prev" title="Anterior">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next" title="Próximo">&rsaquo;</a>-->
+				<!-- bolinhas-->
+                <p class="jcarousel-pagination"></p>
+            </div>
+         </div>
+          </section> <!-- fim .slider-roteiros-->
+          
+          <section class="roteiros">
+            <h2>Faça um desvio para destinos incríveis</h2>
+           	<section class="coluna1">
+ 				<figure><img src="imagens/china-rot.png" width="140" height="120" alt="Mapa Asia"></figure>
+                <div class="coluna1">
+          			<h3>China-Ásia</h3>
+                	<p>Ensine inglês para crianças carentes de orfanatos em Pequim, ao mesmo tempo que aprende mandarim com 3 aulas semanais.</p>
+                </div>
+             </section>
+             <section class="coluna2">
+  				<figure><img src="imagens/africa-rot.png" width="140" height="120" alt="Mapa África"></figure>
+          		<div id="coluna2">
+                	<h3>África do Sul - África</h3>
+                	<p>Ajude a cuidar de idosos em lares  especializados ou na captação e reabilitação de animais abandonados nas ruas.</p>
+				</div>
+            </section>
+            <section class="coluna1">
+				<figure><img src="imagens/brasil-rot.png" width="140" height="120" alt="Mapa Brasil"></figure>
+                <div id="coluna1">
+          			<h3>Rio de Janeiro - Brasil</h3>
+                	<p>Não pode viajar para o exterior?  Sem problemas, ajude na  preservação ambiental da Bahia de Guanabara e mata Atlântica do Rio de Janeiro.</p>
+                </div>
+             </section>
+             <section class="coluna2">
+  				<figure><img src="imagens/panama-rot.png" width="140" height="120" alt="Mapa America Latina"></figure>
+                <div id="coluna2">
+          			<h3>Panamá - América</h3>
+                	<p>Acompanhe a desova das tartarugas em um programa de 3 semanas de duração em Bocas del Toro.</p>
+                </div>    
+			</section>
+            <section class="coluna1">
+				<figure><img src="imagens/africa-rot.png" width="140" height="120" alt="Mapa África"></figure>
+                <div id="coluna1">
+          			<h3>Gana - África</h3>
+                	<p>Seja professor de inglês em Gana ao mesmo tempo que vivencia a cultura e realidade local.</p>
+                </div>
+             </section>
+             <section class="coluna2">
+  				<figure><img src="imagens/mundo-rot.png" width="140" height="120" alt="Mapa Mundi"></figure>
+                <div id="coluna2">
+          			<a href="contato-fluido.html" title="Entre em contato"><h3>Muito mais</h3>
+                	<p>Entre em contato e conheça muito mais destinos para ser turista e voluntário.</p></a>
+				</div>
+            </section>               
+          </section> <!-- fim .roteiros-->  
+        </section> <!-- fim .container-->
+    
+    <section class="redes-sociais">
+    	<h2>Siga a gente</h2>
+        <p>Socialize e compartilhe experiências, acompanhe nossas postagens.</p>
+      		<div class="icones-bloco">
+       			 <div class="facebook">
+       			<figure><a href="https://www.facebook.com" title="Facebook"><img src="imagens/facebook-75.png" width="75" height="75" id="facebook" ></a></figure>
+        			 <p>Curta nossa página no <span>FACEBOOK.</span></p>
+        		 </div>
+        		 <div class="twitter">
+          			 <figure><a href="https://twitter.com/?lang=pt" title="Twitter"><img src="imagens/twitter-75.png" width="75" height="75" id="twitter" ></a></figure>
+        			 <p>Fique atualizado pelo <span>TWITTER.</span></p>
+        		 </div>
+        		 <div class="google">
+          			 <figure><a href="https://plus.google.com/" title="Google+"><img src="imagens/google-75.png" width="75" height="75" id="google" ></a></figure>
+       			   <p>Adicione a gente no <span>GOOGLE+.</span></p>
+        		 </div>
+        		 <div class="instagram">
+          			 <figure><a href="https://instagram.com/" title="Instagram"><img src="imagens/instagram-75.png" width="75" height="75" id="instagram" ></a></figure>
+        			 <p>Veja mais destinos no <span>INSTAGRAM.</span></p>
+        		 </div> 
+     		</div>
+    </section>    
+	<footer>
+    	<ul>
+        	<li>Tel.:<span>[+55] 11 5123-7890</span></li>
+            <li>Todos os direitos reservados DTour® - 2015</li>
+            <li><a href="mailto:contato@dtour.com"><span>contato@dtour.com</span></a></li>
+        </ul>
+	</footer>
+	
+	</body>
+</html>

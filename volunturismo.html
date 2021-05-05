@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+	<meta charset="UTF-8">
+	<title>Volunturismo</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+  <link href="css/estilo-fluido.css" rel="stylesheet" type="text/css" >
+  
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script>
+	$( document ).ready(function() {
+		$(document).scroll(function() { //inicar funcao com o scroll
+			$("#pegada1").animate({opacity: "1"}, 1000); //mudar opacidade em 1 segundo
+			$("#pegada2").delay(1000).animate({opacity: "1"}, 1000); 
+			$("#pegada3").delay(2000).animate({opacity: "1"}, 1000); 
+			$("#pegada4").delay(3000).animate({opacity: "1"}, 1000); 
+			$("#pegada5").delay(4000).animate({opacity: "1"}, 1000); 
+			$("#pegada6").delay(5000).animate({opacity: "1"}, 1000); 
+			$("#pegada7").delay(6000).animate({opacity: "1"}, 1000); 
+			$("#pegada8").delay(7000).animate({opacity: "1"}, 1000);
+			$("#pegada9").delay(8000).animate({opacity: "1"}, 1000); 
+		});
+	});
+	$(document).ready(function() {  
+    	$(".scroll").click(function(event){ //função para descer barra de rolagem suavemente no evento click       
+        	event.preventDefault();
+        	$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+   		});
+		setInterval (function() {
+			$('#p1').fadeToggle(1000);
+			$('#p2').delay(100).fadeToggle(1000);
+			$('#p3').delay(200).fadeToggle(1000);			
+			$('#p4').delay(300).fadeToggle(1000);
+			$('#p5').delay(400).fadeToggle(1000);
+			$('#p6').delay(500).fadeToggle(1000);
+			$('#p7').delay(600).fadeToggle(1000);
+			$('#p8').delay(700).fadeToggle(1000);
+			$('#p9').delay(800).fadeToggle(1000);
+		}, 1000);
+		
+					$('#facebook').mouseenter(function() {
+			$(this).attr('src', 'imagens/facebook-75-cor.png');
+		});
+        $('#facebook').mouseleave(function() {
+			$(this).attr('src', 'imagens/facebook-75.png');
+
+		});		
+        $('#twitter').mouseenter(function() {
+			$(this).attr('src', 'imagens/twitter-75-cor.png');
+
+		});
+        $('#twitter').mouseleave(function() {
+			$(this).attr('src', 'imagens/twitter-75.png');
+
+		});		
+        $('#google').mouseenter(function() {
+			$(this).attr('src', 'imagens/google-75-cor.png');
+
+		});
+        $('#google').mouseleave(function() {
+			$(this).attr('src', 'imagens/google-75.png');
+
+		});		
+        $('#instagram').mouseenter(function() {
+			$(this).attr('src', 'imagens/instagram-75-cor.png');
+
+		});
+        $('#instagram').mouseleave(function() {
+			$(this).attr('src', 'imagens/instagram-75.png');
+
+		});		
+		
+		$( "#formulario" ).submit(function() {
+		alert("Obrigado pela mensagem");
+		});
+	});
+
+</script>
+	</head>
+	
+	<body class="clearfix">
+	<header>
+		<section class="logotipo">
+			<a href="index.html" title="DTour"><img src="imagens/logotipo-60.png" width="200" height="60" alt="logotipo dtour"></a>
+		</section>
+	<nav>
+		<ul>
+			<li id="home"><a href="index.html" title="home" alt="home">HOME</a></li>
+			<li id="roteiros"><a href="roteiros.html" title="roteiros" alt="roteiros">ROTEIROS</a></li>
+			<li id="volunturismo"><a href="volunturismo.html" title="volunturismo" alt="volunturismo">VOLUNTURISMO</a></li>
+			<li id="sobre"><a href="sobre.html" title="sobre" alt="sobre">SOBRE</a></li>
+			<li id="contato"><a href="contato.html" title="contato" alt="contato">CONTATO</a></li>
+			<li id="telefone">[+55] 5123-7890</li>
+		</ul>
+		</nav>
+	</header>
+		
+		<section class="container"> <!-- !CUIDADO - Classe comum a todas as páginas, não mexer.-->
+          <div class="main-volunturismo-fundo"><figure><img src="imagens/fundo-volunturismo2_1920.jpg">
+          <p id="p1">Arrisque-se...</p>
+          <p id="p2" hidden="hidden">caminho para felicidade</p>
+          <p id="p3">vai longe</p>
+          <p id="p4" hidden="hidden">Toda vida é um risco</p>
+          <p id="p5">que você deseja</p>
+          <p id="p6" hidden="hidden">no mundo</p>
+          <p id="p7">be the change</p>
+          <p id="p8" hidden="hidden">ousa mais, faz mais</p>
+          <p id="p9">happiness is a way of tralvel</p>         
+          </figure></div>
+          <section class="main-volunturismo">
+                <h1><a href="#inicio" class="scroll">Volunturismo</a></h1>
+          </section>
+          <section class="volunt-texto">
+          	<h2><a id="inicio">Trabalho Voluntário + Turismo</a></h2>
+          	<div class="pegadas">
+          			<img src="imagens/bota-d_30.png" alt="" id="pegada1" class="pegada-d"/>
+			<figure><img src="imagens/bota-e_30.png" alt="" id="pegada2" class="pegada-e" /></figure>
+					<img src="imagens/bota-d_30.png" alt="" id="pegada3" class="pegada-d" />
+			<figure><img src="imagens/bota-e_30.png" alt="" id="pegada4" class="pegada-e" /></figure>
+					<img src="imagens/bota-d_30.png" alt="" id="pegada5" class="pegada-d"/>
+			<figure><img src="imagens/bota-e_30.png" alt="" id="pegada6" class="pegada-e" /></figure>
+					<img src="imagens/bota-d_30.png" alt="" id="pegada7" class="pegada-d" />
+			<figure><img src="imagens/bota-e_30.png" alt="" id="pegada8" class="pegada-e" /></figure>
+            		<img src="imagens/bota-d_30.png" alt="" id="pegada9" class="pegada-d" />
+
+          	</div>
+            	<p>Volunturismo é a atividade que une o prazer de viajar e iniciativas de responsabilidade social que beneficiam 
+                não apenas o turista, mas centenas de pessoas, animais e até mesmo comunidades inteiras.</p>
+                <p>Muito comum no exterior, a prática do volunturismo, também conhecido como turismo social 
+                (social tourism), é referenciado como um tipo de ”turismo do bem” ao proporcionar ao turista a 
+                descoberta e vivência em novas culturas enquanto este auxilia em projetos sociais e ambientais, 
+                agregando dessa forma algum tipo de retorno a sociedade.</p>
+				<p>Praticantes do volunturismo são em geral pessoas preocupadas com a sua posição enquanto cidadão 
+                social e engajados em expandir seus conhecimentos e experiências culturais, dispondo de seu tempo 
+                um período que varia de alguns dias a até mesmo mais de um ano para promoção de bem estar social.</p>
+                <p>É por compreender e abraçar o conceito de cidadão social enquanto ser transformador da 
+                realidade fragilizada de muitas regiões que a Dtur incentiva a adoção de boas práticas turística, 
+                tais como o consumo consciente de recursos materiais/energéticos, consumo de alimentos e práticas 
+                de hábitos nativos, respeitando-se a cultura local.</p>
+          </section> <!-- fim. volunt-texto -->
+        </section> <!-- fim .container-->
+    
+        <section class="redes-sociais">
+    	<h2>Siga a gente</h2>
+        <p>Socialize e compartilhe experiências, acompanhe nossas postagens.</p>
+      		<div class="icones-bloco">
+       			 <div class="facebook">
+       			<figure><a href="https://www.facebook.com" title="Facebook"><img src="imagens/facebook-75.png" width="75" height="75" id="facebook" ></a></figure>
+        			 <p>Curta nossa página no <span>FACEBOOK.</span></p>
+        		 </div>
+        		 <div class="twitter">
+          			 <figure><a href="https://twitter.com/?lang=pt" title="Twitter"><img src="imagens/twitter-75.png" width="75" height="75" id="twitter" ></a></figure>
+        			 <p>Fique atualizado pelo <span>TWITTER.</span></p>
+        		 </div>
+        		 <div class="google">
+          			 <figure><a href="https://plus.google.com/" title="Google+"><img src="imagens/google-75.png" width="75" height="75" id="google" ></a></figure>
+       			   <p>Adicione a gente no <span>GOOGLE+.</span></p>
+        		 </div>
+        		 <div class="instagram">
+          			 <figure><a href="https://instagram.com/" title="Instagram"><img src="imagens/instagram-75.png" width="75" height="75" id="instagram" ></a></figure>
+        			 <p>Veja mais destinos no <span>INSTAGRAM.</span></p>
+        		 </div> 
+     		</div>
+    </section>
+    
+	<footer>
+    	<ul>
+        	<li>Tel.:<span>[+55] 11 5123-7890</span></li>
+            <li>Todos os direitos reservados DTour® - 2015</li>
+            <li><a href="mailto:contato@dtour.com"><span>contato@dtour.com</span></a></li>
+        </ul>
+	</footer>
+	
+	</body>
+</html>

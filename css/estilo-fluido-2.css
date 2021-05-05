@@ -1,0 +1,676 @@
+@charset "utf-8";
+/*CSS Document*/
+
+/*======================
+		NORMALIZE
+========================*/
+
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+
+/*==========================================================================================
+										CONFIGURAÇÕES GERAIS
+============================================================================================*/
+body{
+	font-size:62.5%; /*font-size:62.5%; - Forçando a equivalência 10px = 1em */
+	font-family:Lucida Fax;
+	margin-top:0;
+	min-width:1200px; /*1200px / 1200px(contexto fixado)= 1* 100% = 100% */
+}
+a, a:link, a:visited, a:hover {
+	text-decoration:none;
+	color:#000000;
+}
+
+/.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+h2, h3{font-family:Lucida Bright;}
+h2{font-size:2.4em;}
+h3{font-size:2.0em;}
+p{letter-spacing:0.05em; font-size:1.6em; color:#4b4b4b;} /*0.5px*/
+
+/**********************************************************************************************
+						*** SEÇÃO HEADER - LOGOTIPO + MENU NAVEGAÇÃO ***
+***********************************************************************************************/
+header{
+	width:100%; /*1200px / 1200px (contexto = body) = 1 * 100% = 100% */
+	margin:0 auto auto 0;
+	border-bottom:2px solid #D6AB00;
+	height:80px;
+}
+/*====================
+		LOGOTIPO 
+=====================*/
+/*Fazer logotipo de alura máx = 80px;*/
+
+.logotipo{
+	margin:9px auto auto 20px;
+	float:left;
+}
+
+
+/*====================
+		NAVEGAÇÃO 
+=====================*/
+nav{
+	float:right;
+	margin:3px auto auto 0;
+	width:75%; /* 900 / 1200px*/
+}
+	nav ul{
+		list-style:none;
+		width:100%; /*900px / 900px*/
+		padding-right:0;	
+	}
+	nav ul li{
+		text-align:center;
+		display:inline-block;
+		font-size:1.6em; /*18px*/
+		padding:15px 0 5px 0;
+		margin:0;
+		float:left;
+	}
+	#home, #sobre {width:10%;}
+	#roteiros, #contato{width:15%;}
+	#telefone {width:20%;}
+	#volunturismo{width:25%;}
+	nav ul li:last-child{
+		color:#D6AB00;
+	}
+	nav a:link, nav a:visited{
+		letter-spacing:1.5px;
+		color:#000000;
+		text-decoration:none;
+	}
+ 	nav a:hover{
+		color:#D6AB00;
+	}
+	nav a:active{ /* ERRO - Link ativo não esta funcionando */
+		color:#D6AB00;
+	}
+/* Fim seção - HEADER*/
+
+/************************************************************************
+		*** SEÇÃO CONTAINER- TODO O CONTEÚDO DE TODAS AS PÁGINAS ***
+*************************************************************************/
+.container{
+	clear:both;
+	margin-top:0;
+	width:100%; /*100% = 1200px */
+}
+/** Plano de fundo Branco para imagens.***/
+
+	
+/******************************************************************************************
+					*** SEÇÃO REDES SOCIAIS - 4 colunas de conteúdo ***
+*******************************************************************************************/
+.redes-sociais{
+	clear:both;
+	width:100%; /*width do body = 1200px */
+	height:200px;
+	background-color:#5E0E21;
+	margin-top:0px;
+	color:#ffffff;
+}
+	.redes-sociais h2{
+		text-align:center;
+		font-size:2.0em; /*tamanho padrão de título h2 = 20px */
+		margin:0 auto;
+		padding-top:20px;
+		letter-spacing:0.5px;
+	}
+	.redes-sociais p{
+		margin-top:10px; /*aproxima o parágrafo ao título h2 */
+		text-align:center;
+		font-size:1.6em;
+		letter-spacing:0.05em;
+		color:#FFFFFF;
+	}
+	
+.icones-bloco{
+	width:83.3333333333%; /* 1000px / 1200px*/
+	height:80px;
+	margin-left:8.3333333333%; /*100px / 1200px*/
+	}	
+.facebook figure, .twitter figure, .google figure, .instagram figure{
+	float:left;
+	margin-right:0;
+	margin-bottom:auto;
+	margin-left:0;
+}
+
+.facebook figure{margin-top:7px} 
+.google figure, .instagram figure {margin-top:10px;}
+.twitter figure{margin-top:12px;}
+.instagram figure{margin-right:auto;}
+.facebook p, .twitter p, .google p, .instagram p{
+	float:left;
+	text-align:left;
+	font-size:1.4em; /* 14px */
+	width:15%; /* 150px / 1000px */
+	letter-spacing:0.5px;
+	margin-left:0;
+	margin-right:0;
+	margin-top:30px;
+}
+.facebook p{margin-right:2.5%;} /* 2% = 10px */
+.twitter p{margin-right:1%; margin-left:1%;} /* 1% = 5px */
+.google p {margin-right:2.5%; margin-left:1%;}
+.instagram p{margin-right:auto; margin-left:1%;}
+.facebook p span, .twitter p span, .google p span, .instagram p span{font-weight:bold;}
+/*Fim seção - Redes Sociais*/
+
+
+/**************************************************************
+		*** SEÇÃO FOOTER - Rodapé com 3 colunas ***
+***************************************************************/
+footer{
+	letter-spacing:1.2px;
+	font-size:14px;
+	clear:both;
+	width:100%;
+	height:50px;
+	}
+	footer ul{
+	margin-left:100px;
+	margin-top:20px;
+	list-style-type:none;
+	}
+	footer ul li{
+		padding-right:150px;
+		float:left;
+	}
+	footer ul li:last-child{padding-right:0;}
+	footer ul li span{color:#D6AB00;}
+/*Fim seção - FOOTER*/
+
+/*====================================== FIM DAS CONFIGURAÇÕES GERAIS =====================================*
+
+
+
+
+
+###########################################################################################################
+###########################################################################################################
+
+
+
+
+
+/*===========================================================================================================
+										ESTILIZAÇÃO ESPECÍFICA DAS PÁGINAS
+=============================================================================================================*/
+
+
+
+
+
+/*************************************** [ PÁGINA INDEX.HTML ] *************************************************** */
+/*-----------------------------------------------------------------------------
+		*** SEÇÃO SLIDER-HOME -Slider com 4 Imagens ***
+--------------------------------------------------------------------------------*/
+.slider-home{
+	width:100%; /* 100% = 1200px*/
+	height:90vh;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	}
+	
+/*-----------------------------------------------------------------------------
+		*** SEÇÃO CONTEUDO-HOME - 3 divs de conteúdo (inicio, meio, fim) ***
+--------------------------------------------------------------------------------*/	
+.conteudo-home{
+	width:83.3333333333%; /* 1000px / 1200px */
+	float:left;
+	/*margin-left:8.3333333333%; /* 100px / 1200px */
+	margin-right:auto;
+	margin-bottom:0;
+	}
+	.inicio-home{
+		width:100%; /*1000px*/
+		margin-left:8.3333333333%; /* 100px / 1200px */
+		float:left;
+	}
+	.inicio-home h2{
+		text-align:center;
+		font-size:2.4em; /* 24px */
+		font-weight:bold;
+		font-size:Lucida Bright;
+		margin-top:5%;
+	}
+	.colunas{
+		width:30%; /* 300px / 1000px */
+		float:left;
+		margin-right:5%; /* 50px / 1000px*/
+	}
+	#col3{margin-right:0;}
+	
+	.colunas p{text-align:left; padding:0; margin-top:0;}
+	.colunas figure{margin-left:10%; margin-bottom:0;}
+
+	.meio-home{
+	min-width:1200px;
+	width:100vw; 
+	background-color:#D3D3D3;
+	float:left;
+	border-top:2px solid #5E0E21;
+	margin-bottom:0;
+	}
+
+	.meio-home figure{margin:5% 0 0 8.3333333333%; padding:0;float:left;}
+	.meio-home h1{ 
+		font-size:4.0em; /* 40px */
+		color:#5E0E21; 
+		text-align:center;
+		margin-left:25%; /* 250px / 1000px*/
+		margin-top:10%;
+	}
+	.meio-home p{
+		width:50%; /* 500px / 1000px */
+		margin-left:40%; /* 400px / 1000px*/ 
+		font-size:3.0em; /* 30px*/
+		text-align:center; 
+		color:#000000;
+	}
+.fim-home{
+	clear:both;
+	width:100%; /* 1000px*/
+	margin-left: 8.3333333333%; /* 100px */
+
+}
+	.frases {
+		width:60%; /* 600px / 1000px*/
+		float:left;
+	}
+		.frase1{
+			float:left;
+			width:100%; /* 600px / 600px*/
+			text-align:center;
+			margin-top:15%;
+			margin-bottom:17%;
+		}
+
+		.frase1 p{
+			float:left;
+			width:91.6666666667%; /*550px / 600px*/
+			margin-left:0; 
+			margin-bottom:0;
+			font-size:1.8em; /* 18px */
+			color:#000000;
+			}
+		#autor1 {font-style:italic; margin-left:36%;}
+		.frase1 span, .frase2 span{
+			float:left; 
+			font-family:Britannic Bold; 
+			font-size:4.8em; /* 48px */
+			color:#D6AB00;
+			margin:0;
+			padding:0;
+			}
+
+		.frase2{
+			clear:both;
+			width:83.3333333333%; /* 500px / 600px*/
+			text-align:center;
+			margin-left:25%;
+			float:left;
+		}	
+		.frase2 p{
+			float:left; 
+			width:80%; /* 400px / 500px*/
+			margin-left:0; 
+			margin-bottom:0;
+			font-size:1.8em; /* 18px */
+			color:#000000;
+			}
+		#autor2 {font-style:italic; margin-left:23%;}
+
+	.frase-direita{
+		float:left;
+		width:40%; /* 400px / 1000px*/
+	}
+	.frase-direita figure{
+		width:93.75%; /* 375px / 400px*/
+		margin-left:5%;
+		margin-top:-6%;
+	}
+	.frase-direita h2 {
+		text-align:center;  
+		width:62.5%; /* 250px / 400px*/
+		margin:15% auto 0 15%;
+		}
+	.frase-direita p{ 
+		text-align:center; 
+		font-size:2.0em; /* 20px */
+		width:62.5%; /* 250px / 400px*/
+		margin:0 auto 0 15%;
+		}
+
+/****************************************[ PÁGINA VOLUNTURISMO.HTML ]********************************************* */
+
+/*-----------------------------------------------------------------------------
+		*** SEÇÃO MAIN-VOLUNT - Animações de Apresentação   ***
+--------------------------------------------------------------------------------*/
+.main-volunturismo-fundo{
+	width:100%;
+	min-height:90vh; /*Utilizar no layout fluido */
+	z-index:1;
+	overflow:hidden;
+	/*position:relative;*/
+	top:0;
+	left:0;
+	}
+.main-volunturismo-fundo figure{
+	margin:0;
+	}
+.main-volunturismo a:link, .main-volunturismo a:visited, .main-volunturismo a:active {
+	z-index:2;
+	float:left;
+	display:table;
+	position:absolute;
+	top:50%;
+	left:40%;
+	border:2px #d6ab00 solid;
+	padding:1%;
+	color:#d6ab00;
+	border-radius:5px;
+	font-size:1.6em;
+	text-decoration:none;
+	}
+.main-volunturismo h1 a:hover {border:2px solid #D6AB00; color:#ffffff; background-color:#D6AB00;}
+
+  .main-volunturismo-fundo p {color:#5E0E21; font-size:3em; font-family:"Brush Script Std";}
+  #p1 {
+	  position:absolute;
+	  top:10%;
+	  left:10%;
+  }
+  #p2 {
+	  position:absolute;
+	  top:10%;
+	  left:50%;
+  }
+  #p3 {
+	  position:absolute;
+	  top:20%;
+	  left:40%;
+  }
+  #p4 {
+	  position:absolute;
+	  top:30%;
+	  left:70%;
+  }
+  #p5 {
+	  position:absolute;
+	  top: 50%;
+	  left: 5%;
+  }
+  #p6 {
+	  position:absolute;
+	  top:50%;
+	  left:80%;
+  }
+  #p7 {
+	  position:absolute;
+	  top:70%;
+	  left:40%;
+  }
+  #p8 {
+	  position:absolute;
+	  top:80%;
+	  left:70%;
+  }
+  #p9 {
+	  position:absolute;
+	  top:90%;
+	  left:20%;
+  }
+
+/*-----------------------------------------------------------------------------
+		*** SEÇÃO TEXTO-VOLUNT - 4 Parágrafos com explicação sobre o tema   ***
+--------------------------------------------------------------------------------*/
+.volunt-texto {
+	width:79.1666666667%; /* 950px / 1200px */
+	margin-left:10.4166666667%; /* 125px / 1200px*/
+	}
+.volunt-texto h2{text-align:center; font-size:2.2em; padding-bottom:0; padding-top:5%;}
+.volunt-texto p{margin-bottom:5%; margin-top:5%;}
+
+.pegadas{float:left;}
+.pegadas img{opacity:0;}
+
+#pegada1 {float:left;}
+#pegada2 {margin-top:100%;}
+#pegada3 {margin-top:-15%;float:left;}
+#pegada4 {margin-top:100%;}
+#pegada5 {margin-top:-15%;float:left;}
+#pegada6 {margin-top:100%;}
+#pegada7 {margin-top:-15%;float:left;}
+#pegada8 {margin-top:100%;}
+#pegada9 {margin-top:-15%;float:left;}
+
+
+
+
+
+/****************************************[ PÁGINA ROTEIROS.HTML ]********************************************* */
+/*-----------------------------------------------------------------------------
+		*** SEÇÃO SLIDER-ROTEIROS - Slider autommático com 5 imagens  ***
+--------------------------------------------------------------------------------*/
+.slider-roteiros{
+	width:100%; /* 100% = 1200px*/
+	min-height:90vh;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	}
+	
+/*-----------------------------------------------------------------------------
+		*** SEÇÃO ROTEIROS - Conteúdo divido em 2 colunas  ***
+--------------------------------------------------------------------------------*/ 
+.roteiros{
+	width:91.6666666667%; /* 1100px / 1200px */
+	height:auto;
+	margin:30px auto auto 4.16666666667%; /* 50px / 1200px */
+	
+}
+.roteiros h2{text-align:center; font-size:2.2em; padding-bottom:20px; padding-top:35px;}
+.roteiros h3{font-size:1.8em;}
+
+.coluna1, .coluna2 {float:left; width:50%;} /* 550px / 1100px */
+.coluna2 {margin-bottom:100px;}
+.coluna1 figure, .coluna2 figure {float:left; margin-right:0; margin-left:0;}
+.coluna1 div, .coluna2 div{
+	width:65.4545454545%; /* 360px / 550px*/
+	float:left; 
+	margin-top:0; 
+	margin-left:2.72727272%; /* 15px / 550px*/
+	} 
+	
+
+/*
+.roteiros h2{text-align:center; font-size:2.2em; padding-bottom:20px; padding-top:35px;}
+.roteiros h3{font-size:1.8em;}
+.coluna1, .coluna2 {float:left;}
+.coluna1 figure, .coluna2 figure {float:left; margin-left:0;margin-right:0;}
+.coluna1 div, .coluna2 div {float:left; width:32.7272727273%; margin-left:0.8333333333%; padding:0;} /* 360px / 1100px | 10px / 1100px*/
+/*.coluna2 {margin-left:0%; margin-bottom:70px;} /* 50px  / 1100px*/
+
+
+/****************************************[ PÁGINA SOBRE.HTML ]********************************************* */
+/*------------------------------------------------------------
+		*** SEÇÃO MAIN-SOBRE - Fundo sobre escrito ***
+--------------------------------------------------------------*/
+
+.main-sobre{
+	float:left;
+	width:100%;
+	height:500px;
+	position:relative;
+	z-index:3;
+}
+.sobre-fundo{
+	width:100%;
+	height:500px;
+	z-index:1;
+	position:absolute;
+	overflow:hidden;
+
+	}
+.sobre-fundo-branco{
+	width:100%;
+	height:500px;
+	position:absolute;
+	background-color:rgba(255,255,255,0.7);
+	z-index:2;
+	}
+.logo-sobre{
+	width:83.3333333333%; /* 100px / 1200px */
+	position:absolute;
+	left:5%;
+	top:10%;
+	z-index:4;
+	margin-bottom:5%;
+}
+	#logo-grande{
+	display:block;
+	width:40%; /* 400px / 1000px */
+	float:left;
+	margin-left:0;
+	margin-right:5%; /* 50px / 1000px*/
+	}
+	#logo-grande figure{width:75%; margin-left:15%;} /* 300px / 400px */
+	#quem-somos{
+	display:block;
+	width:55%; /* 550 px / 1000px */
+	float:left;
+	margin-right:0;
+	margin-top:5%;
+	}
+	#quem-somos h2{text-align:center;margin-top:0; font-size:2.4em;}
+	#quem-somos p{padding:10px; font-size:1.8em; color:#4b4b4b; color:#000000;}
+
+/*-------------------------------------------------
+		*** SEÇÕES MISSÃO-VISÃO E VALORES ***
+---------------------------------------------------*/
+
+.missao-visao{
+	clear:both;
+	/*position:static;*/
+	width:83.3333333333%;
+	margin-left:10%; /* 100px / 1000px*/
+}
+	.missao, .visao {display:block; width:50%; float:left; margin-top:5%;} /* 500px / 1000px */
+	.missao figure, .visao figure{float:left; margin-left:0; margin-top:0; margin-right:2%;}
+	#missao-texto, #visao-texto {float:left; display:block; width:70%;} /* 350px / 500px */
+	#missao-texto h3, #visao-texto h3 {margin-top:0; font-size:2.0em;}
+	
+.valores{
+	clear:both;
+	width:75%; /* 900px / 1200px */
+	margin-left:12.5%; /* 150px / 1200px */
+}
+	.valores h3{text-align:center;padding-top:30px; padding-bottom:25px;}
+	.valores p{text-align:center;padding-bottom:15px; color:#4b4b4b;}
+	.valores p:last-child{padding-bottom:50px;}
+	.valores p span{color:#5E0E21;}
+	.valores img{float:left;}
+
+	#met-valores {opacity:0} /*metafora-valores aparece ao descer a barra de rolagem*/
+
+
+
+
+/**********[ PÁGINA CONTATO.HTML - FALTANDO VALIDAR CAMPOS E SCRIPT PHP PARA O FORM ]*********************** */
+
+/*------------------------------------------------------------
+		*** SEÇÃO CONTATO - FORMULÁRIO DE CONTATO ***
+--------------------------------------------------------------*/
+.form-contato{
+	min-height:90vh; /***** Conteúdo ocupa 90% da altura de visualização da tela. Testar em monitores de 1440*/
+	background-color:#E4E4E4;
+	letter-spacing: 0.05em; /*0.5px*/
+	color:#4B4B4B;
+}
+.form-contato h2{
+	margin-top: 0px;
+	text-align: center;
+	padding: 60px 0 10px 0;
+	font-weight: bolder;
+	font-size: 2.2em; /*20px*/
+	color:#000000;
+}
+.form-contato p{
+	font-size:1.6em; /*18px*/
+	margin-top: 0;
+	text-align: center;
+	width:60.8333333333%; /* 730px * 100% / 1200px = 60.8333333333% */
+	margin:20px auto 70px 18.5%; /* 230px * 100% / 1200px = 19.1666666667%*/
+}
+.form-contato span{
+	color:#5E0E21;
+}
+label{
+	font-size:1.6em;
+	padding-bottom:2px;
+}
+#txt-nome, #txt-telefone, #txt-email, #mensagem{
+	margin-top:5px;
+}
+input{
+	margin-bottom:40px;
+	width:91.42857143%; /*320px / 350px (contexto=#primeira-metade) */
+	border:2px solid #9E9E9E ;
+	height:25px;
+	font-size:1.6em;
+}
+#primeira-metade{
+	width:29.1666666667%; /* 350px / 1200px*/
+	margin-left:19.5833333333%; /*235px / 1200px*/
+	float:left;
+	}
+#segunda-metade{
+	width:29.1666666667%; /* 350px / 1200px*/
+	margin-left:52.5%; /* 630px / 1200px | soma do espaço ocupado pela div #primeira-metade + a margem necessária*/
+}
+#endereco{
+	width:300px;
+	margin:10px auto 0 0;
+	text-align:left;
+	font-size:1.6em;
+}
+#inteiro{
+	clear:both;
+    width:62.5%; /* 750px / 1200px*/
+	margin-top:20px;
+	margin-left:19.5833333333%; /* 235px / 1200px */
+	padding-left:0px;		
+}
+textarea{
+	clear:both;
+	width:95.3333333333%; /* 715px / 750px*/
+	height:100px;
+	border:2px solid #9E9E9E ;
+	margin-bottom:25px;
+	font-size:1.6em;
+}
+.btn-enviar{
+	font-size:1.6em;
+	margin-left:65.8333333333%; /* 790px / 1200px*/
+	border:2px solid #5E0E21;
+	color: #5E0E21;
+	background-color:#ffffff;
+	width:14.1666666667%; /* 170px / 1200px */
+	height:35px;
+	}
+/*Fim seção - CONTATO*/
+/****************************************** [ FIM PÁGINA CONTATO.HTML ] ***************************************** */

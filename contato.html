@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-BR">
+	<head>
+	<meta charset="UTF-8">
+	<title>Contato</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+	<link href="css/estilo-fluido.css" rel="stylesheet" type="text/css" >
+	<script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	$(document).ready(function(e) {
+        $('#facebook').mouseenter(function() {
+			$(this).attr('src', 'imagens/facebook-75-cor.png');
+		});
+        $('#facebook').mouseleave(function() {
+			$(this).attr('src', 'imagens/facebook-75.png');
+
+		});		
+        $('#twitter').mouseenter(function() {
+			$(this).attr('src', 'imagens/twitter-75-cor.png');
+
+		});
+        $('#twitter').mouseleave(function() {
+			$(this).attr('src', 'imagens/twitter-75.png');
+
+		});		
+        $('#google').mouseenter(function() {
+			$(this).attr('src', 'imagens/google-75-cor.png');
+
+		});
+        $('#google').mouseleave(function() {
+			$(this).attr('src', 'imagens/google-75.png');
+
+		});		
+        $('#instagram').mouseenter(function() {
+			$(this).attr('src', 'imagens/instagram-75-cor.png');
+
+		});
+        $('#instagram').mouseleave(function() {
+			$(this).attr('src', 'imagens/instagram-75-cor.png');
+
+		});		
+		
+		$( "#formulario" ).submit(function() {
+		alert("Obrigado pela mensagem");
+		});
+    });
+	
+	</script>
+	</head>
+	
+	<body class="clearfix">
+	<header>
+		<section class="logotipo">
+			<a href="index.html" title="DTour"><img src="imagens/logotipo-60.png" width="200" height="60" alt="logotipo dtour"></a>
+		</section>
+	<nav>
+		<ul>
+			<li id="home"><a href="index.html" title="home" alt="home">HOME</a></li>
+			<li id="roteiros"><a href="roteiros.html" title="roteiros" alt="roteiros">ROTEIROS</a></li>
+			<li id="volunturismo"><a href="volunturismo.html" title="volunturismo" alt="volunturismo">VOLUNTURISMO</a></li>
+			<li id="sobre"><a href="sobre.html" title="sobre" alt="sobre">SOBRE</a></li>
+			<li id="contato"><a href="contato.html" title="contato" alt="contato">CONTATO</a></li>
+			<li id="telefone">[+55] 5123-7890</li>
+		</ul>
+		</nav>
+	</header>
+	<section class="container">
+      <section class="form-contato">
+		<h2>Fale com a gente</h2>
+		<p>Ligue ou entre em contato pelo Skype em <span>[+55] 11 5123-7890 </span> para trocar idéias. Você pode
+também enviar um email para <span> contato@dtour.com </span> ou preencher o formulário abaixo para
+enviar sugestões e dúvidas.</p>
+		<form name="contato" method="post" id="formulario"  onsubmit="formulario()">
+          <div id="primeira-metade">
+			<label for="nome">NOME</label><br>
+			<input type="text" name="nome" id="txt-nome" required pattern="[A-z\s]+$" title="apenas letras"><br><br>
+			<label for="telefone">TELEFONE</label><br> <!--pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}"-->
+			<input type="tel" name="telefone" id="txt-telefone"required pattern="[0-9]+$" title="apenas números"/>
+          </div>
+          <div id="segunda-metade">
+			<label for="email">EMAIL</label><br>
+			<input type="email" name="email" id="txt-email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="insira um email válido">
+			<p id="endereco">ESCRITÓRIO<br>
+			  <span>Av. Paulista, 1003</span> - São Paulo SP<br>
+			  Brasil</p>
+          </div>
+          <div id="inteiro">
+			<label for="mensagem">MENSAGEM</label><br>
+			<textarea id="mensagem" name="textarea-mensagem" required title="insira uma mensagem"></textarea>
+			<input type="submit" value="ENVIAR" class="btn-enviar" >
+          </div>
+		</form>
+	  </section> <!-- fim .form-contato-->
+    </section> <!-- fim .container -->
+    
+    <section class="redes-sociais">
+    	<h2>Siga a gente</h2>
+        <p>Socialize e compartilhe experiências, acompanhe nossas postagens.</p>
+      		<div class="icones-bloco">
+       			 <div class="facebook">
+       			<figure><a href="https://www.facebook.com" title="Facebook"><img src="imagens/facebook-75.png" width="75" height="75" id="facebook" ></a></figure>
+        			 <p>Curta nossa página no <span>FACEBOOK.</span></p>
+        		 </div>
+        		 <div class="twitter">
+          			 <figure><a href="https://twitter.com/?lang=pt" title="Twitter"><img src="imagens/twitter-75.png" width="75" height="75" id="twitter" ></a></figure>
+        			 <p>Fique atualizado pelo <span>TWITTER.</span></p>
+        		 </div>
+        		 <div class="google">
+          			 <figure><a href="https://plus.google.com/" title="Google+"><img src="imagens/google-75.png" width="75" height="75" id="google" ></a></figure>
+       			   <p>Adicione a gente no <span>GOOGLE+.</span></p>
+        		 </div>
+        		 <div class="instagram">
+          			 <figure><a href="https://instagram.com/" title="Instagram"><img src="imagens/instagram-75.png" width="75" height="75" id="instagram" ></a></figure>
+        			 <p>Veja mais destinos no <span>INSTAGRAM.</span></p>
+        		 </div> 
+     		</div>
+    </section>    
+    
+	<footer>
+    	<ul>
+        	<li>Tel.:<span>[+55] 11 5123-7890</span></li>
+            <li>Todos os direitos reservados DTour® - 2015</li>
+            <li><span>contato@dtour.com</span></li>
+       </ul>
+	</footer>
+	
+	</body>
+</html>
+	

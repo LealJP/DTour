@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+	<meta charset="UTF-8">
+	<title>Dtour</title>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+  </script>
+  <![endif]-->
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+
+  <link href="css/estilo-fluido.css" rel="stylesheet" type="text/css" >
+            <link rel="stylesheet" type="text/css" href="css/jcarousel.responsive.css">
+            <style type="text/css">
+            .slider1 {color:black !important;
+}
+
+
+
+            </style>
+
+		<!-- jquery-->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        
+        <!-- plugin para o carrossel-->
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+		
+        <!-- script para este carrossel-->
+        <script type="text/javascript" src="js/jcarousel.responsive.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+    		$(".scroll").click(function(event){ //função para descer barra de rolagem suavemente no evento click       
+        		event.preventDefault();
+        		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
+			});
+			$(document).scroll(function() {
+				if ($(window).scrollTop() >= 500) {
+				$('.colunas').show(1500);
+				};
+			});
+		$('#facebook').mouseenter(function() {
+			$(this).attr('src', 'imagens/facebook-75-cor.png');
+		});
+        $('#facebook').mouseleave(function() {
+			$(this).attr('src', 'imagens/facebook-75.png');
+
+		});		
+        $('#twitter').mouseenter(function() {
+			$(this).attr('src', 'imagens/twitter-75-cor.png');
+
+		});
+        $('#twitter').mouseleave(function() {
+			$(this).attr('src', 'imagens/twitter-75.png');
+
+		});		
+        $('#google').mouseenter(function() {
+			$(this).attr('src', 'imagens/google-75-cor.png');
+
+		});
+        $('#google').mouseleave(function() {
+			$(this).attr('src', 'imagens/google-75.png');
+
+		});		
+        $('#instagram').mouseenter(function() {
+			$(this).attr('src', 'imagens/instagram-75-cor.png');
+
+		});
+        $('#instagram').mouseleave(function() {
+			$(this).attr('src', 'imagens/instagram-75.png');
+
+		});		
+		
+		$( "#formulario" ).submit(function() {
+		alert("Obrigado pela mensagem");
+		});
+   		});
+        </script>
+	</head>
+	
+	<body class="clearfix">
+	<header>
+		<section class="logotipo">
+			<a href="index.html" title="DTour"><img src="imagens/logotipo-60.png" width="200" height="60" alt="logotipo dtour"></a>
+		</section>
+	<nav>
+		<ul>
+			<li id="home"><a href="index.html" title="home" alt="home">HOME</a></li>
+			<li id="roteiros"><a href="roteiros.html" title="roteiros" alt="roteiros">ROTEIROS</a></li>
+			<li id="volunturismo"><a href="volunturismo.html" title="volunturismo" alt="volunturismo">VOLUNTURISMO</a></li>
+			<li id="sobre"><a href="sobre.html" title="sobre" alt="sobre">SOBRE</a></li>
+			<li id="contato"><a href="contato.html" title="contato" alt="contato">CONTATO</a></li>
+			<li id="telefone">[+55] 5123-7890</li>
+		</ul>
+		</nav>
+	</header>
+		
+		<section class="container"> <!-- !CUIDADO - Classe comum a todas as páginas, não mexer.-->
+          <section class="slider-home">
+            <div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>                	<!--substituir imagens -->
+                        <li><img src="imagens/slider-home1.jpg" alt="Amigas" width="1536" >
+                        		<h1 class="slider1">Hey Buddy! Bem Vindo a Dtour!</h1>
+                            	<h2 id="home-tit1" class="slider1">O desvio que te leva à destinos incríveis.</h2>
+
+                            <a href="#inicio" class="scroll"><p id="btn-home">Iniciar Tour</p></a>
+                        </li>
+                        <li><img src="imagens/slider-home2.jpg" alt="China" width="1536" >
+                        	<div class="fundo">
+                            <a href="roteiros.html"><h2>PEQUIM - CHINA</h2>
+                            <p>Ensine inglês, aprenda mandarim.</p></a></div>
+                        </li>                        
+                        <li><img src="imagens/slider-home3.jpg" alt="Mãos unidas" width="1536" >
+                         <div class="fundo">
+                         <a href="volunturismo.html"><h2 id="home-tit3">VOLUNTURISMO</h2>
+                         <p id="home-p3">Para quem gosta de ser a transformação que deseja ver no mundo.</p></a></div>
+                        </li>
+                       	<li><img src="imagens/slider-home4.jpg" alt="Homem na Estrada" width="1536" >
+                        <div class="fundo">
+                        <a href="roteiros.html"><h2 id="home=tit4">SURPREENDA-SE!</h2>
+                        <p id="home-p4">Desvie para os destinos mais incríveis e inusitados</p></a></div>
+                        </li>
+                    </ul>
+                </div>
+				
+                <a href="#" class="jcarousel-control-prev" title="Anterior">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next" title="Próximo">&rsaquo;</a>
+            </div>
+         </div>
+                 
+           
+          </section> <!-- fim .slider-home-->
+          <section class="conteudo-home">
+          	<div class="inicio-home">
+            	<h2 id="inicio">Viaje com a DTour...</h2>
+                <div class="colunas" id="col1" hidden>
+                <figure><img src="imagens/secao1-home-1.png" width="200" height="200" alt="rapaz caminhando"></figure>
+                <p>para fora da rota e descubra lugares que irão te surpreender.</p>
+                </div>
+                <div class="colunas" id="col2" hidden>
+                <figure><img src="imagens/secao1-home-2.png" width="200" height="200" alt="africana sorrindo"></figure>
+                <p>Conheça sobre novas culturas,  outros costumes e...</p>
+                </div>
+                <div class="colunas" id="col3" hidden>
+                <figure><img src="imagens/secao1-home-3.png" width="200" height="200" alt="moça segurando chama de luz"></figure>
+                <p>seja a mudança que o mundo precisa!</p>
+                </div>              
+            </div>
+            <div class="meio-home">
+           	  <figure><img src="imagens/meio-home.png" width="295" height="335" alt="moça com dúvidas"></figure>
+                <a href="volunturismo.html" alt="contato"><h1>Já ouviu falar em Volunturismo?</h1></a>
+                <p>O turismo que busca unir lazer, cultura, bem estar social e cidadania.</p> 
+            </div>
+            <div class="fim-home">
+              <section class="frases">
+            	<div class="frase1">
+                		<span>"</span><p>Arrisque-se! Toda vida é um risco. (...) <br>O barco da segurança nunca vai 
+               		 	muito além da margem.</p><span>"</span>
+                		<p id="autor1">Dale Carnegie</p>
+                </div>
+                <div class="frase2">
+                		<span>"</span><p>Não há um caminho para a felicidade.<br>A felicidade é o caminho!</p><span>"</span>    		
+                		<p id="autor2">Mahatma Gandhi</p>   
+            	</div>
+              </section>
+              <section class="frase-direita">
+              	<a href="contato.html" alt="contato"><h2>DTour</h2>
+                <p>Pacotes de viagem para quem pensa fora da caixa</p></a>
+                <figure><img src="imagens/box-home.png" width="375" height="280" alt="mão segurando caixa"></figure>
+              </section>
+
+            </div> <!-- fim .fim-home -->
+          </section><!-- fim .chamada-home-->
+
+        </section> <!-- fim .container-->
+    
+    <section class="redes-sociais">
+    	<h2>Siga a gente</h2>
+        <p>Socialize e compartilhe experiências, acompanhe nossas postagens.</p>
+      		<div class="icones-bloco">
+       			 <div class="facebook">
+       			<figure><a href="https://www.facebook.com" title="Facebook"><img src="imagens/facebook-75.png" width="75" height="75" id="facebook" ></a></figure>
+        			 <p>Curta nossa página no <span>FACEBOOK.</span></p>
+        		 </div>
+        		 <div class="twitter">
+          			 <figure><a href="https://twitter.com/?lang=pt" title="Twitter"><img src="imagens/twitter-75.png" width="75" height="75" id="twitter" ></a></figure>
+        			 <p>Fique atualizado pelo <span>TWITTER.</span></p>
+        		 </div>
+        		 <div class="google">
+          			 <figure><a href="https://plus.google.com/" title="Google+"><img src="imagens/google-75.png" width="75" height="75" id="google" ></a></figure>
+       			   <p>Adicione a gente no <span>GOOGLE+.</span></p>
+        		 </div>
+        		 <div class="instagram">
+          			 <figure><a href="https://instagram.com/" title="Instagram"><img src="imagens/instagram-75.png" width="75" height="75" id="instagram" ></a></figure>
+        			 <p>Veja mais destinos no <span>INSTAGRAM.</span></p>
+        		 </div> 
+     		</div>
+    </section>    
+    
+	<footer>
+    	<ul>
+        	<li>Tel.:<span>[+55] 11 5123-7890</span></li>
+            <li>Todos os direitos reservados DTour® - 2015</li>
+            <li><a href="mailto:contato@dtour.com"><span>contato@dtour.com</span></a></li>
+       </ul>
+	</footer>
+	
+	</body>
+</html>
